@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contatti | ER FOTO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <nav>
+            <a href="index.html">ER FOTO</a>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contatti.html">contatti</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <main>
+            <h1>Contatti</h1>
+            <div class="contenuto">
+                <div class="contatti-box-1">
+                    <p><span><i class="fa-solid fa-envelope"></i></span> info@erfoto.it</p>
+                    <p><span><i class="fa-solid fa-phone"></i></span> +39 123 456789</p>
+                    <p><span><i class="fa-brands fa-facebook-f"></i></span> ER foto</p>
+                    <p><span><i class="fa-brands fa-instagram"></i></span> @er_foto</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.718855026636!2d7.649750000000002!3d45.050926800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d283080d8c1%3A0xdfa5b1a30727cfe6!2sVia%20Elba%2C%2019%2C%2010136%20Torino%20TO!5e0!3m2!1sit!2sit!4v1661354585644!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contatti-box-2">
+                    <form action="/action_page.php">
+                        <p><label for="nome">nome</label><br>
+                        <input type="text" id="nome"></p>
+                        <p><label for="cognome">cognome</label><br>
+                        <input type="text" id="cognome"></p>
+                        <p><label for="email">email</label><br>
+                        <input type="email" id="email"></p>
+                        <p>messaggio<br>
+                        <textarea id="messaggio"></textarea></p>
+                        <br>
+                        <input type="submit" value="Invia">
+                      </form>
+                </div>
+            </div>
+        </main>
+        <div class="crediti">
+            <p>© 2022 by ER FOTO</p>
+        </div>
+    </section>
+
+    <!----- Javascript for toggle menu ---->
+    <script>
+        var menu = document.getElementById("menu");
+        function showMenu(){
+            menu.style.right = "0";
+        }
+        function hideMenu(){
+            menu.style.right = "-300px";
+        }
+
+   </script> 
+</body>
+</html>
