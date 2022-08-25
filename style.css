@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: black;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 300;
+}
+
+p{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/home.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section  {
+    padding: 54px 68px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+
+}
+
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+    width: 100%;
+}
+
+.home-contenuto{
+    color: #fff;
+    position: absolute;
+    top:  316px;
+    left: 68px;
+    text-align: left;
+
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+.crediti-home {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 54px;
+}
+
+@media(max-width:700px){
+    body {
+        overflow-x: hidden;
+    }
+    .menu ul li{
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        padding: 0px;
+
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+    .menu ul{
+        padding: 30px 40px;
+
+    }
+
+    .menu ul li::after{
+        display: none;}
+
+}
+
+/*fine home*/
+
+/*about*/
+main h1 {
+    padding-top: 90px;
+    padding-bottom: 88px;
+}
+
+.contenuto {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.about-box-1 {
+    flex: 654px;
+    margin-right: 40px;
+}
+
+.about-box-2 img{
+    flex: 623px;
+    width: 100%;
+    text-align: right;
+}
+
+.crediti {
+    padding-top: 121px;
+}
+
+/*contatti*/
+.contatti-box-1 {
+    flex: 642px;
+    margin-right: 197px;
+}
+
+.contenuto .fa-solid, 
+.contenuto .fa-brands{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 61px;
+}
+
+.contenuto span .fa-solid, 
+.contenuto span .fa-brands {
+    width: 50px;
+}
+
+iframe {
+    border-radius: 10px;
+    margin-top: 76px;
+}
+
+.contatti-box-2 {
+    flex: 459px;
+    font-size: 20px;
+}
+
+.contatti-box-2 input, .contatti-box-2 textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contatti-box-2 input {
+    height: 50px;
+}
+
+.contatti-box-2 textarea {
+    height: 347px;
+}
+
+/*portfolio*/
+
+.portfolio{
+    box-sizing: border-box;
+    margin: 2rem calc(2vw+2rem);
+}
+
+.contenitore{
+    margin: 2rem 0;
+    display: block;
+    columns: 3;
+    gap: 1rem;
+}
+
+div {
+    margin-bottom: 0.5rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .contenitore{
+        columns: 2;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contenitore{
+        columns: 1;
+    }
+}
