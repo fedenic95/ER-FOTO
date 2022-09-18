@@ -244,3 +244,8 @@ img{
         columns: 1;
     }
 }
+
+@media(max-width:700px){
+    iframe { 
+        max-width: 100vh;}
+}
