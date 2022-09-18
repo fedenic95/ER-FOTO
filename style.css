@@ -247,5 +247,5 @@ img{
 
 @media(max-width:700px){
     iframe { 
-        max-width: 100vh;}
+        width: 100%;}
 }
